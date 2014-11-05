@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">课程助理</string>
+    <string name="please_use_id">请使用学号</string>
+    <string name="password">密码</string>
+    <string name="learning_effect">学习效果</string>
+    <string name="teaching_arrangement">安排</string>
+     <string name="teaching_effect">教学情况</string>
+    <string name="attendance">到课</string>
+    <string name="teaching_schedule">进度</string>
+    <string name="begindate">2014-2-24</string>
+
+    <string-array name="learning_effect_array">
+        <item>很差</item>
+        <item>较差</item>
+        <item>一般</item>
+        <item>较好</item>
+        <item>很好</item>
+    </string-array>
+    <string-array name="teaching_arrangement_array">
+        <item>好</item>
+        <item>一般</item>
+        <item>差</item>
+    </string-array>
+    <string-array name="teaching_schedule_array">
+        <item>&lt;50%</item>
+        <item>≈70%</item>
+        <item>&gt;90%</item>
+    </string-array>
+
+    <string name="get_evaluation">动态</string>
+    <string name="curriculum">本学期课程</string>    
+    <string name="teaching_evaluation">评价</string>
+    <string name="advice_tips">今天课上学到了什么？还有什么问题和疑惑？和老师同学一起交流讨论吧！(200字内)</string>
+    <string name="spit_tips">觉得这堂课上的怎样？有什么意见或建议吗？快把你的想法告诉老师吧！(200字内)</string>
+    <string name="teaching_evaluation_tip">所有反馈信息都匿名存储，请如实填写。</string>
+    <string name="homepage">首页</string>
+    <string name="comment">感受 正文</string>
+    <string name="comment1">小结 正文</string>
+    <string name="timetable">课表</string>
+    <string name="achievement">成绩</string>
+    <string name="config">设置</string>
+    <string name="logout">注销</string>
+    <string name="message">消息</string>
+    <string name="teaching_arrangement_value1">正常</string>
+    <string name="teaching_arrangement_value2">调课</string>
+    <string name="teaching_arrangement_value3">停课</string>
+    <string name="attendance_value1">&lt;50%</string>
+    <string name="attendance_value2">≈70%</string>
+    <string name="attendance_value3">&gt;90%</string>
+    <string name="teaching_schedule_value1">较慢</string>
+    <string name="teaching_schedule_value2">适中</string>
+    <string name="teaching_schedule_value3">较快</string>
+    <string name="abort">取消</string>
+    <string name="nocomment">还没有评论，快来抢沙发~</string>
+    <string name="ok">完成</string>
+    <string name="yes">确定</string>
+    <string name="login_tip">初始密码为您的生日，如yyyyMMdd\n通过登陆，即表示我可以接受课程助理的服务条款</string>
+    <string name="today">今天</string>
+    <string name="search">查询..</string>
+    <string name="year">学年</string>
+    <string name="term">学期</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="state">状态</string>
+    <string name="logining">正在登录</string>
+    <string name="loading">正在载入</string>
+    <string name="liking">正在+1</string>
+    <string name="disliking">正在-1</string>
+	<string name="name">姓名</string>
+	<string name="college">学院</string>
+	<string name="specialty">专业</string>
+	<string name="classname">班级</string>
+	<string name="self_info">个人资料</string>
+	<string name="push_notice">推送通知</string>
+	<string name="curriculum_remind">课程提醒</string>
+	<string name="change_pwd">修改密码</string>
+	<string name="feedback">反馈建议</string>
+	<string name="update_self">检测更新</string>
+	<string name="about">关于我们</string>
+	<string name="login_out">注销登陆</string>
+    <string name="uploading">正在提交</string>
+	<string name="fill_old_pwd">请输入原密码</string>
+	<string name="fill_new_pwd">请输入新密码</string>
+	<string name="fill_new_pwd_again">请重新输入新密码</string>
+	<string name="feedback1">反馈</string>
+	<string name="feedback_notice">为了提高你的用户体验，欢迎反馈如下方面的信息：\n1)使用过程中出现的问题。\n2)期待的新功能。\n3)欢迎吐槽任何细节问题。</string>
+	<string name="submit">提交</string>
+	<string name="advice_tip">有任何意见建议，欢迎吐槽~</string>
+	<string name="summary">总结</string>
+	<string name="message1">显示成绩的每一行都可以向左滑动使此成绩不计入GPA计算中，如需恢复只需再次向左滑动。\n注：绩点可能会有上下0.01的误差。</string>
+	<string name="message2">课程助理由南京工业大学矩阵实验室的老师及学生自主设计开发，本版本内部结构调整较大，如果出现各种各样神奇的错误或者你有任何建议和想法请及时让我们知道，本软件尚未进入正式版请务必及时更新到最新的版本以获得新功能和更好的体验。\n反馈请进入 设置-反馈意见。</string>
+	<string name="message3">“课程助理”是一款集学业信息管理和课堂教学反馈为一体的移动教育应用软件。学生可以随堂反馈学习小结、看法感受及其他教学信息，教师根据反馈评估教学效果并及时调整教学内容和方法，从而有效提高课堂教学质量和学习体验。</string>
+	<string name="description">description</string>
+	<string name="totalk">感受</string>
+	<string name="toevaluate">小结</string>
+	<string name="tcard">报告</string>
+	<string name="advice">建议</string>
+	<string name="spit">吐槽</string>
+	<string name="updateText">%1$s前</string>
+	<string name="spitted_just_now">刚刚</string>
+	<string name="Like">+1</string>
+	<string name="Dislike">-1</string>
+	
+	<string name="copyright">Copyright©NJTECH M-Lab</string>
+	<string name="copyright2">Copyright © 2014 All rights reserved</string>
+	<string name="copyright3">Copyright©2014 NJTECH M-Lab</string>
+	<string name="version">v1.0</string>
+	<string name="version_bottom">课程助理 v1.0</string>
+</resources>

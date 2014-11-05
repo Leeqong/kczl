@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/navbar_height"
+        android:background="@color/toolbar" >
+
+        <Button
+            android:id="@+id/toolbar_nav_button"
+            android:layout_width="42dip"
+            android:layout_height="28dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/toolbar_nav_icon_bg" >
+        </Button>
+
+        <TextView
+            android:id="@+id/term_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/config"
+            android:textColor="@drawable/white"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dip"
+                android:layout_marginTop="12dip"
+                android:gravity="center"
+                android:text="@string/self_info"
+                android:textColor="@color/gray"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:typeface="sans" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dip"
+                android:layout_marginLeft="13dip"
+                android:layout_marginRight="13dip"
+                android:background="@drawable/infor_item_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dip"
+                    android:paddingRight="13dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="@string/name"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/mycardDetailSize"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/name_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:singleLine="true"
+                        android:text="商文喜"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/mycardDetailSize"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/defaul_bg_purecolor_thumb" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="39dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dip"
+                    android:paddingRight="13dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="@string/college"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/mycardDetailSize"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/college_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:singleLine="true"
+                        android:text="电子与信息工程学院"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/mycardDetailSize"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/defaul_bg_purecolor_thumb" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dip"
+                    android:paddingRight="13dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="@string/specialty"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/mycardDetailSize"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/specialty_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:singleLine="true"
+                        android:text="计算机科学与技术"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/mycardDetailSize"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/defaul_bg_purecolor_thumb" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="39dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dip"
+                    android:paddingRight="13dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="@string/classname"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/mycardDetailSize"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/class_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:singleLine="true"
+                        android:text="矩阵实验室"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/mycardDetailSize"
+                        android:typeface="sans" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dip"
+                android:layout_marginTop="12dip"
+                android:gravity="center"
+                android:text="@string/push_notice"
+                android:textColor="@color/gray"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:typeface="sans" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dip"
+                android:layout_marginLeft="13dip"
+                android:layout_marginRight="13dip"
+                android:background="@drawable/infor_item_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="39dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dip"
+                    android:paddingRight="13dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/curriculum_remind"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/mycardDetailSize"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <ToggleButton
+                        android:id="@+id/curriculum_remind_ToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_butn_toggle"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/logo" >
+            </Button>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/copyright3"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:typeface="sans" >
+            </TextView>
+
+            <Button
+                android:id="@+id/change_pwd_button"
+                android:layout_width="290dip"
+                android:layout_height="48dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dip"
+                android:background="@drawable/about_btn"
+                android:gravity="center"
+                android:text="@string/change_pwd"
+                android:textColor="@color/white"
+                android:textSize="17sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/feedback_button"
+                android:layout_width="290dip"
+                android:layout_height="48dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dip"
+                android:background="@drawable/about_btn"
+                android:gravity="center"
+                android:text="@string/feedback"
+                android:textColor="@color/white"
+                android:textSize="17sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/update_button"
+                android:layout_width="290dip"
+                android:layout_height="48dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dip"
+                android:background="@drawable/about_btn"
+                android:gravity="center"
+                android:text="@string/update_self"
+                android:textColor="@color/white"
+                android:textSize="17sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/about_button"
+                android:layout_width="290dip"
+                android:layout_height="48dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dip"
+                android:background="@drawable/about_btn"
+                android:gravity="center"
+                android:text="@string/about"
+                android:textColor="@color/white"
+                android:textSize="17sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/login_out_button"
+                android:layout_width="290dip"
+                android:layout_height="48dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="7dip"
+                android:background="@drawable/logout_btn"
+                android:gravity="center"
+                android:text="@string/login_out"
+                android:textColor="@color/white"
+                android:textSize="17sp" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

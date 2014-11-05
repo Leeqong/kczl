@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="dark">#2B2B2B</color>
+    <color name="gray">#ff778899</color>
+    <color name="courseweekbgcolor">#ffffff</color>
+
+    <drawable name="darkgray">#808080</drawable>
+    <drawable name="white">#e6e6e6</drawable>
+    <drawable name="blue">#0000FF</drawable>
+    <drawable name="translucent_background">#7F000000</drawable>
+    <drawable name="commentlist_divider">#f3f3f3</drawable>
+
+    <color name="lightgray">#A8A8A8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="date">#dc3250</color>
+    <color name="datebg">#f8f8f8</color>
+    <color name="halfgray">#e9e9e9</color>
+    <color name="tabblue">#6499cd</color>
+    <color name="login_bg">#212330</color>
+    <!-- 菜单 -->
+    <color name="menu_bg">#272a2d</color>
+    <color name="menu_bg_pressed">#232629</color>
+    <color name="divider_light">#33373b</color>
+    <color name="divider_dark">#1e2124</color>
+    
+    <color name="divider_gray">#e7e9eb</color>
+    <!-- popup -->
+    <color name="light_green">#d0f08d</color>
+    <color name="dark_green">#a1d042</color>
+    <color name="dark_blue">#48a8a7</color>
+    <color name="light_blue">#5dc1c3</color>
+    <color name="light_orange">#ffba41</color>
+    <color name="dark_orange">#f5772d</color>
+    <color name="light_pink">#f13d6d</color>
+    <color name="dark_pink">#f13d6d</color>
+    <color name="layout_pressed_1">#efefef</color>
+    <color name="layout_pressed">#e5e5e5</color>
+    <color name="layout_normal">#fafafa</color>
+    
+    <color name="kindOfDarkBlue">#1a5e9f</color>
+    
+    <color name="rating_onestar">#cc0000</color>
+    <color name="rating_twostar">#f13c11</color>
+    <color name="rating_threestar">#f56617</color>
+    <color name="rating_fourstar">#f5c614</color>
+    <color name="rating_fivestar">#79e131</color>
+    
+    <color name="mlab_gp">#33b5e5</color>
+    <color name="mlab_gc">#abcd05</color>
+    <color name="mlab_cx">#15a73b</color>
+    <color name="mlab_dhw">#fcda02</color>
+    <color name="mlab_lxl">#abcd05</color>
+    <color name="mlab_zcy">#a156ce</color>
+</resources>

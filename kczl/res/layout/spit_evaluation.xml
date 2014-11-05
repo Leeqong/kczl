@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/navbar_height"
+        android:background="@color/toolbar" >
+
+        <Button
+            android:id="@+id/abort_button"
+            android:layout_width="42dip"
+            android:layout_height="28dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dip"
+            android:background="@drawable/cancel_bg"
+            android:textColor="@drawable/white"
+            android:textSize="12sp" >
+        </Button>
+
+        <TextView
+            android:id="@+id/summary_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/totalk"
+            android:textColor="@color/white"
+            android:textSize="18sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="42dip"
+            android:layout_height="28dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dip"
+            android:background="@drawable/confirm_bg"
+            android:textColor="@drawable/white"
+            android:textSize="12sp" >
+        </Button>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/summary_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/summary_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/textfield_edit_pic"
+            android:gravity="top"
+            android:hint="@string/spit_tips"
+            android:textColor="@color/black"
+            android:textColorHint="@color/lightgray"
+            android:textSize="15sp"
+            android:layout_margin="15dip" 
+            android:maxLength="200">
+        </EditText>
+    </LinearLayout>
+    
+
+</LinearLayout>

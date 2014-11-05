@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/navbar_height"
+        android:background="@color/toolbar" >
+
+        <Button
+            android:id="@+id/abort_button"
+            android:layout_width="42dip"
+            android:layout_height="28dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dip"
+            android:background="@drawable/toolbar_back_icon_bg"
+            android:text=""
+            android:textColor="@drawable/white"
+            android:textSize="12sp" >
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/about"
+            android:textColor="@drawable/white"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#F0F0F0"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

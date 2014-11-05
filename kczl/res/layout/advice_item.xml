@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="7dip"
+    android:paddingRight="7dip"
+    android:paddingTop="7dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white_normal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:padding="5dip" 
+            android:layout_height="40dip"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="5dip" >
+
+                <TextView
+                    android:id="@+id/coursename_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="课程名称获取失败"
+                    android:textColor="@color/gray"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/coursetime_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:text="获取失败"
+                    android:textColor="@color/gray"
+                    android:layout_centerVertical="true"
+                    android:textSize="13sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/teacher_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@+id/coursetime_TextView"
+                    android:text="获取失败"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" >
+                </TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ratingLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="学习效果  :"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/rating_bar"
+                    android:layout_width="102dip"
+                    android:layout_height="18dip"
+                    android:src="@drawable/stream_star_5" />
+
+                <TextView
+                    android:id="@+id/learning_effect_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dip"
+                    android:text="很好"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp"
+                    android:visibility="gone" >
+                </TextView>
+            </LinearLayout>
+            <!--
+            <RelativeLayout
+                android:id="@+id/evaluationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip" >
+
+                <TextView
+                    android:id="@+id/speed_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="教学进度：较慢"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/attendance_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_toRightOf="@id/speed_textView"
+                    android:gravity="center"
+                    android:text="到课情况：&lt;50%"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" >
+                </TextView>
+            </RelativeLayout>
+            -->
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:gravity="center"
+                android:text="停课"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:visibility="gone" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#EAEAEA" 
+            android:visibility="gone">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:text="内容获取失败"
+            android:textColor="@color/black"
+            android:textSize="16sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/advicetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:text="发布时间获取失败"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:drawableLeft="@drawable/clock"
+                android:textSize="13sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#EAEAEA" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/advice_comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip" >
+
+                <ImageView
+                    android:id="@+id/comment"
+                    android:layout_width="18dip"
+                    android:layout_height="18dip"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/comment" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/comment_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dip"
+                    android:layout_toRightOf="@+id/comment"
+                    android:text="评论 "
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" >
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

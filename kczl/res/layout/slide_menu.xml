@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/menu_bg"
+    android:orientation="vertical"
+    android:paddingTop="47dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_light" />
+
+    <RelativeLayout
+        android:id="@+id/course"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navbar_height"
+        android:background="@color/menu_bg" >
+
+        <LinearLayout
+            android:id="@+id/block_timetable"
+            android:layout_width="@dimen/bluestrip"
+            android:layout_height="match_parent"
+            android:background="@color/toolbar"
+            android:orientation="vertical"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/menu_timetable_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/block_timetable"
+            android:background="@drawable/menu_classtable"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/menu_timetable_iv"
+            android:text="@string/timetable"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_light" />
+
+    <RelativeLayout
+        android:id="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navbar_height"
+        android:background="@color/menu_bg" >
+
+        <LinearLayout
+            android:id="@+id/block_grade"
+            android:layout_width="@dimen/bluestrip"
+            android:layout_height="match_parent"
+            android:background="@color/toolbar"
+            android:orientation="vertical"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/menu_grade_iv"
+            android:layout_width="@dimen/slidemenu_length"
+            android:layout_height="@dimen/slidemenu_length"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/block_grade"
+            android:background="@drawable/menu_grade"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/menu_grade_iv"
+            android:text="@string/achievement"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_light" />
+
+    <RelativeLayout
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navbar_height"
+        android:background="@color/menu_bg" >
+
+        <LinearLayout
+            android:id="@+id/block_msg"
+            android:layout_width="@dimen/bluestrip"
+            android:layout_height="match_parent"
+            android:background="@color/toolbar"
+            android:orientation="vertical"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/menu_msg_iv"
+            android:layout_width="@dimen/slidemenu_length"
+            android:layout_height="@dimen/slidemenu_length"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/block_msg"
+            android:background="@drawable/menu_msg"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/menu_msg_iv"
+            android:text="@string/message"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:layout_width="@dimen/navbar_height"
+            android:layout_height="@dimen/navbar_height"
+            android:layout_alignParentRight="true" 
+            android:paddingRight="5dip">
+
+            <ImageView
+                android:id="@+id/badge_iv"
+                android:layout_width="35dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/badge_unviewed" />
+
+            <TextView
+                android:id="@+id/msg_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_light" />
+
+    <RelativeLayout
+        android:id="@+id/config"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navbar_height"
+        android:background="@color/menu_bg" >
+
+        <LinearLayout
+            android:id="@+id/block_setting"
+            android:layout_width="@dimen/bluestrip"
+            android:layout_height="match_parent"
+            android:background="@color/toolbar"
+            android:orientation="vertical"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/menu_setting_iv"
+            android:layout_width="@dimen/slidemenu_length"
+            android:layout_height="@dimen/slidemenu_length"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/block_setting"
+            android:background="@drawable/menu_setting"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/menu_setting_iv"
+            android:text="@string/config"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="bottom" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navbar_height" >
+
+            <LinearLayout
+                android:id="@+id/line_d"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/divider_dark"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/line_l"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/line_d"
+                android:background="@color/divider_light"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="28dip"
+                android:text="@string/version_bottom"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

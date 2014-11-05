@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg" >
+
+    <RelativeLayout
+        android:id="@+id/temp_ly1"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="54dip" >
+
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/temp_ly2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp_ly1"
+        android:layout_marginLeft="36dip"
+        android:layout_marginRight="36dip"
+        android:layout_marginTop="23dip" >
+
+        <EditText
+            android:id="@+id/username_et"
+            android:layout_width="289dip"
+            android:layout_height="45dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_tv_bg"
+            android:drawableLeft="@drawable/login_user"
+            android:gravity="center_vertical"
+            android:hint="  学号或工号"
+            android:paddingLeft="0dip"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/pwd_et"
+            android:layout_width="289dip"
+            android:layout_height="45dip"
+            android:layout_below="@id/username_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dip"
+            android:background="@drawable/login_tv_bg"
+            android:drawableLeft="@drawable/login_pwd"
+            android:gravity="center_vertical"
+            android:hint=" 密码"
+            android:imeOptions="actionGo"
+            android:paddingLeft="0dip"
+            android:password="true"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:id="@+id/temp_ly"
+            android:layout_width="289dip"
+            android:layout_height="45dip"
+            android:layout_below="@id/pwd_et"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/origin_pwd_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dip"
+                android:layout_toLeftOf="@+id/forget_pwd_tv"
+                android:gravity="center"
+                android:text="初始密码"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/forget_pwd_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="忘记密码"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="289dip"
+            android:layout_height="45dip"
+            android:layout_below="@id/temp_ly"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/about_btn"
+            android:text="登    录"
+            android:textColor="@color/white"
+            android:textSize="21dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/cqc_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp_ly2"
+        android:layout_marginLeft="36dip"
+        android:layout_marginRight="36dip"
+        android:layout_marginTop="13dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创青春专用测试账号登录"
+            android:textColor="@color/white" 
+            android:gravity="center"
+            android:layout_marginBottom="5dip"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_marginRight="5dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/cqc_logo" />
+
+            <Button
+                android:id="@+id/cqc_tlogin_btn"
+                android:layout_width="0dp"
+                android:layout_height="45dip"
+                android:layout_below="@id/temp_ly"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/about_btn"
+                android:gravity="center"
+                android:text="教师登录"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cqc_slogin_btn"
+                android:layout_width="0dp"
+                android:layout_height="45dip"
+                android:layout_below="@id/temp_ly"
+                android:layout_weight="1"
+                android:background="@drawable/about_btn"
+                android:gravity="center"
+                android:text="学生登录"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bottom_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dip"
+        android:gravity="center"
+        android:text="Powered by NanjingTech M-Lab"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

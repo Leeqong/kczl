@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d5d9"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlebanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbar" >
+
+        <Button
+            android:id="@+id/toolbar_nav_button"
+            android:layout_width="42dip"
+            android:layout_height="28dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/toolbar_back_icon_bg" >
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/comment1"
+            android:textColor="@drawable/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/commentblock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editbox"
+        android:layout_below="@id/titlebanner"
+        android:layout_margin="7dip"
+        android:background="@drawable/background_white_normal"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <com.njut.pullrefresh.ui.PullToRefreshListView
+                android:id="@+id/commmentListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:cacheColorHint="#00000000"
+                android:divider="#f3f3f3"
+                android:dividerHeight="1dip" >
+            </com.njut.pullrefresh.ui.PullToRefreshListView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/commentblock"
+        android:background="#b9b9b9" >
+    </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/editbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#f3f3f3"
+        android:orientation="horizontal"
+        android:padding="10dip" 
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/comment_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textfield_edit_pic"
+            android:hint="写评论...(200字内)"
+            android:textSize="14sp" 
+            android:maxLength="200"
+            android:maxLines="5"/>
+
+        <Button
+            android:id="@+id/send_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/send_btn_bg"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

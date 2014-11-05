@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content"> 
+ 
+<item 
+    android:id="@+android:id/background" 
+    android:drawable="@drawable/rate_star_big_off"
+    android:layout_height="30dip" 
+    android:layout_width="30dip">
+</item> 
+<item 
+    android:id="@+android:id/secondaryProgress" 
+    android:drawable="@drawable/rate_star_big_off"
+    android:layout_height="30dip" 
+    android:layout_width="30dip">
+</item> 
+<item 
+    android:id="@+android:id/progress" 
+    android:drawable="@drawable/rate_star_big_on_green"
+    android:layout_height="30dip" 
+    android:layout_width="30dip">
+</item> 
+ 
+</layer-list> 

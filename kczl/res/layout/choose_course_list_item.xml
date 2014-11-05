@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg_white_gray" >
+
+    <LinearLayout
+        android:id="@+id/btnleft"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/banner"
+            android:orientation="vertical"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_green" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/course_time_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="15:40-17:20"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <com.njut.view.AlwaysMarqueeTextView
+                    android:id="@+id/course_name_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="2dip"
+                    android:layout_toLeftOf="@id/course_time_Textview"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="数据结构与算法"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" >
+                </com.njut.view.AlwaysMarqueeTextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip" >
+
+                <TextView
+                    android:id="@+id/teacher_name_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="19dip"
+                    android:gravity="center"
+                    android:text="刘斌"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/classroom_name_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="厚学楼314(多)"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" >
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignBottom="@+id/btnleft"
+        android:background="@color/divider_gray" >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/btnleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="19dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="5dip">
+
+                <ImageView
+                    android:id="@+id/state_Imageview"
+                    android:layout_width="13dip"
+                    android:layout_height="13dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="0dip"
+                    android:src="@drawable/blue_circle" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/course_time_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="15:40-17:20"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <com.njut.view.AlwaysMarqueeTextView
+                    android:id="@+id/course_name_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="19dip"
+                    android:layout_marginRight="2dip"
+                    android:layout_toLeftOf="@id/course_time_Textview"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="数据结构与算法"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" >
+                </com.njut.view.AlwaysMarqueeTextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip" >
+
+                <TextView
+                    android:id="@+id/teacher_name_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="19dip"
+                    android:gravity="center"
+                    android:text="刘斌"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/classroom_name_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="厚学楼314(多)"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" >
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:layout_alignBottom="@+id/btnleft"
+        android:background="@drawable/dark_separator" >
+    </ImageView>
+
+</RelativeLayout>

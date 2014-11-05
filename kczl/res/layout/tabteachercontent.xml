@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+	            android:paddingBottom="5dip"
+	            android:paddingTop="5dip" 
+	            android:id="@+id/tab_star_layout">
+                <ImageView
+			            android:id="@+id/tab_star_icon"
+			            android:layout_width="30dip"
+			            android:layout_height="30dip"
+			            android:layout_centerHorizontal="true"
+			            android:background="@drawable/selector_curriculum_tab1" >
+			    </ImageView>
+	            <TextView
+	                android:id="@+id/tab_star_TextView"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@+id/tab_star_icon"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginTop="5dip"
+	                android:text="教学评价"
+	                android:textColor="@drawable/teacher_tab_text_bg"
+	                android:textSize="12sp" >
+	            </TextView>
+	          </RelativeLayout> 
+    
+
+</LinearLayout>

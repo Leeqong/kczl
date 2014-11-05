@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/confirm_btn">
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="75dip"
+            android:layout_height="120dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gestures_right" />
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="75dip"
+            android:layout_height="120dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gestures_left" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="289dip"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dip"
+        android:background="@drawable/about_btn"
+        android:text="我知道了"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
